@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Source') {
-            steps {
-                git 'https://github.com/raf4ga/unir-test.git'
-            }
-        }
         stage('Unit tests') {
             steps {
                 echo 'Unit tests!'
