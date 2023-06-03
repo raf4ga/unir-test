@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Source') {
             steps {
-                git 'https://github.com/SindyYohana/unir-test.git'
+                git 'https://github.com/raf4ga/unir-test.git'
             }
         }
         stage('Unit tests') {
