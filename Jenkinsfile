@@ -9,6 +9,7 @@ pipeline {
         stage('Unit tests') {
             steps {
                 echo 'Unit tests!'
+		sh 'apt install build-essential'
                 sh 'make build test-unit'
                 archiveArtifacts artifacts: 'results/*.xml'
                 archiveArtifacts artifacts: 'results/*.html'
